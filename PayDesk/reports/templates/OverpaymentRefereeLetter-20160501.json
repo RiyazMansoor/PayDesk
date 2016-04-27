@@ -1,0 +1,177 @@
+[
+    {
+        "templateName": "OverpaymentRefereeLetter",
+        "templateType": "docx",
+        "templateTable": 1,
+        "bookmark_settings": {
+            "db_table": 1,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "MIdentifier",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                },
+                {
+                    "db_table_field_name": "DeadMemberFullNameMv",
+                    "format": "None",
+                    "bookmark_name": "DeadMemberFullNameMv"
+                },
+                {
+                    "db_table_field_name": "DeadMemberIdentifier",
+                    "format": "None",
+                    "bookmark_name": "DeadMemberIdentifier"
+                },
+                {
+                    "db_table_field_name": "DeadMemberBankAccount",
+                    "format": "None",
+                    "bookmark_name": "DeadMemberBankAccount"
+                },
+                {
+                    "db_table_field_name": "RefMemberFullNameMv",
+                    "format": "None",
+                    "bookmark_name": "RefMemberFullNameMv"
+                },
+                {
+                    "db_table_field_name": "RefMemberFullAddressMv",
+                    "format": "None",
+                    "bookmark_name": "RefMemberFullAddressMv"
+                }
+            ]
+        },
+        "spot_settings": {
+            "db_table": 1,
+            "doc_table": 0,
+            "spots": [
+                {
+                    "db_table_field_name": "MIdentifier",
+                    "format": "None",
+                    "doc_table_row": 0,
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "DnrMemberNameMv",
+                    "format": "None",
+                    "doc_table_row": 1,
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "DnrFullAddressMv",
+                    "format": "None",
+                    "doc_table_row": 2,
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "Do65Y",
+                    "format": "YearMonthDate",
+                    "doc_table_row": 3,
+                    "doc_table_col": 1
+                }
+            ]
+        },
+        "grid_settings": {
+            "db_table": 2,
+            "doc_table": 2,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "PortfolioCode",
+                    "format": "PortfolioName",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "MemberContribution",
+                    "format": "Rufiya",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "OtherContribution",
+                    "format": "Rufiya",
+                    "doc_table_col": 2
+                },
+                {
+                    "db_table_field_name": "AdminFee",
+                    "format": "Rufiya",
+                    "doc_table_col": 3
+                },
+                {
+                    "db_table_field_name": "Profit",
+                    "format": "Rufiya",
+                    "doc_table_col": 4
+                },
+                {
+                    "db_table_field_name": "CurrentValue",
+                    "format": "Rufiya",
+                    "doc_table_col": 5
+                }
+            ],
+            "footer_settings": {
+                "db_table": 3,
+                "doc_table_row": [
+                    {
+                        "db_table_field_name": "Jumla",
+                        "format": "None",
+                        "doc_table_col": 0
+                    },
+                    {
+                        "db_table_field_name": "SumMemberContrib",
+                        "format": "Rufiya",
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "SumOtherContrib",
+                        "format": "Rufiya",
+                        "doc_table_col": 2
+                    },
+                    {
+                        "db_table_field_name": "SumAdminFee",
+                        "format": "Rufiya",
+                        "doc_table_col": 3
+                    },
+                    {
+                        "db_table_field_name": "SumProfit",
+                        "format": "Rufiya",
+                        "doc_table_col": 4
+                    },
+                    {
+                        "db_table_field_name": "SumCurrentValue",
+                        "format": "Rufiya",
+                        "doc_table_col": 5
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "templateName": "EnvelopTable",
+        "templateType": "xlsx",
+        "templateTable": 3,
+        "grid_settings": [
+            {
+                "db_table": 4,
+                "xlx_sheet_index": 0,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "DIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DSex",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DSex",
+                        "format": "TitleMv"
+                    },
+                    {
+                        "db_table_field_name": "DnrMemberNameMv",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DnrFullAddressMv",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "rptName": "Bank Overpayment Recovery",
+        "rptType": "Weekly",
+        "rptUrl":  "/report/bankoverpaymentrecovery/"
+    },
+    {
+        "rptName": "Overpayment Letter - Single Account",
+        "rptType": "Weekly",
+        "rptUrl":  "/report/overpaymentlettersingleaccount/"
+    },
+    {
+        "rptName": "Overpayment Letter - Joint Account",
+        "rptType": "Weekly",
+        "rptUrl":  "/report/overpaymentletterjointaccount/"
+    },
+    {
+        "rptName": "Member Overpayment Status",
+        "rptType": "Anytime",
+        "rptUrl":  "/report/memberoverpaymentstatus/"
+    },
+    {
+        "rptName": "Retirement Notification",
+        "rptType": "Monthly",
+        "rptUrl":  "/report/retirementnotification/"
+    },
+    {
+        "rptName": "Overpayment Monthly Notice",
+        "rptType": "Monthly",
+        "rptUrl":  "/report/overpaymentmonthlynotice/"
+    },
+    {
+        "rptName": "Bank Verifications ( Active )",
+        "rptType": "Anytime",
+        "rptUrl":  "/report/bankverification/"
+    }
+]

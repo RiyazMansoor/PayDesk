@@ -1,0 +1,136 @@
+[
+    {
+        "templateName": "MemberOverpaymentStatus",
+        "templateType": "docx",
+        "separatorDbTable": 1,
+        "bookmark_settings": {
+            "db_table": 1,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "MIdentifier",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                }
+            ]
+        },
+        "spot_settings": [
+            {
+                "db_table": 1,
+                "doc_table": 0,
+                "spots": [
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None",
+                        "doc_table_row": 0,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "FullAddress",
+                        "format": "None",
+                        "doc_table_row": 1,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "MDoDeath",
+                        "format": "YearMonthDate",
+                        "doc_table_row": 2,
+                        "doc_table_col": 1
+                    }
+                ]
+            }
+        ],
+        "grid_settings": {
+            "db_table": 2,
+            "doc_table": 1,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "PensionType",
+                    "format": "PensionType",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "PensionMonth",
+                    "format": "YearMonth",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "OverpaymentValue",
+                    "format": "Rufiya",
+                    "doc_table_col": 2
+                },
+                {
+                    "db_table_field_name": "RecoveredValue",
+                    "format": "Rufiya",
+                    "doc_table_col": 3
+                },
+                {
+                    "db_table_field_name": "DueValue",
+                    "format": "RedRufiya",
+                    "doc_table_col": 4
+                }
+            ],
+            "footer_settings": {
+                "db_table": 3,
+                "doc_table_row": [
+                    {
+                        "db_table_field_name": "Jumla",
+                        "format": "None",
+                        "doc_table_col": 0
+                    },
+                    {
+                        "db_table_field_name": "SumOverpaymentValue",
+                        "format": "Rufiya",
+                        "doc_table_col": 2
+                    },
+                    {
+                        "db_table_field_name": "SumRecoveredValue",
+                        "format": "Rufiya",
+                        "doc_table_col": 3
+                    },
+                    {
+                        "db_table_field_name": "SumDueValue",
+                        "format": "RedRufiya",
+                        "doc_table_col": 4
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "templateName": "EnvelopTable",
+        "templateType": "xlsx",
+        "separatorDbTable": 4,
+        "grid_settings": {
+            "db_table": 5,
+            "xlx_sheet_index": 0,
+            "grid_start_row": 2,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "DIdentifier",
+                    "format": "None",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "DSex",
+                    "format": "None",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "DSex",
+                    "format": "TitleMv",
+                    "doc_table_col": 2
+                },
+                {
+                    "db_table_field_name": "DnrMemberNameMv",
+                    "format": "None",
+                    "doc_table_col": 3
+                },
+                {
+                    "db_table_field_name": "DnrFullAddressMv",
+                    "format": "None",
+                    "doc_table_col": 4
+                }
+            ]
+        }
+    }
+]

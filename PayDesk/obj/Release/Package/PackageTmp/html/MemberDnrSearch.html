@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Member Dnr Search</title>
+    <style type="text/css">
+        #memberdata > tr > td {
+            text-align: left;
+            padding: 10pt;
+            margin: 4pt;
+            border-radius: 4pt;
+            background-color: lightgreen;
+        }
+        #memberdata > tr:nth-child( 1 ) {
+            vertical-align: top;
+            font-size: medium;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+        }
+        .spanValue {
+            font-size: medium;
+            padding: 2pt 6pt 2pt 4pt;
+            margin-right: 12pt;
+            border-radius: 2pt;
+            background-color: white;
+        }
+    </style>
+    <script src="$$AppPath/html/jquery.min.js"></script>
+    <script>
+
+        var AppPath = '$$AppPath';
+
+    function showMember(json) {
+
+	    $('#waitmsg').hide();
+
+		var t1 = json.table1 ; if ( t1 == null ) t1 = [] ;
+		var r1 = '' ;
+		for (var i = 0 ; i < t1.length ; i++) {
+            var id = t1[ i ].DIdentifier ; 
+            id = ( t1[ i ].MemberId == null ) ? id : '<a href="' + AppPath + '/member/identifier/' + id + '" target="_blank" >' + id + '</a>' ;
+			r1 = r1 + '<tr>' + tdStr( id ) 
+                    + tdStr( t1[ i ].DMemberName ) + tdStr( t1[ i ].DAddress )  + tdStr( t1[ i ].DIsland )
+                    + tdStr( t1[ i ].DDoBirth.substr( 0, 10 ) )	+ tdStr( t1[ i ].ChangeRemarks ) + '</tr>' ;
+		}
+		var s1 = '<tr><td style="width:2cm">Identifier :</td><td style="width:6cm">MemberName :</td><td style="width:5cm">Address :</td>'
+					+ '<td style="width:4cm">Island :</td><td style="width:3cm">DoBirth :</td><td style="width:7cm">ChangeRemarks :</td></tr>'
+					+ r1 + '' ;
+		$( '#memberdata' ).append( s1 ) ;
+
+	}
+
+	function memberLink(i) { if (i == null) return null; return '<a target="_blank" href="' + AppPath + '/member/identifier/' + i + '">' + i + '</a>'; }
+	function fldStr(l, v, t) { if (v == null) return ''; if (t == null) t = '$l <span class="spanValue" >$v</span>'; return t.replace('$l', l).replace('$v', v); }
+	function addrStr( l, a, i, h, t ) { if ( a == null && i == null && h == null ) return '' ; return '$l <span class="spanValue" style="">$h, $i, $a</span>'.replace( '$l', l ).replace( '$h', h ).replace( '$i', i ).replace( '$a', a ) ; }
+	function tdStr( v ) { return '<td class="spanValue">' + ( v == null ? '' : v ) + '</td>' ; }
+	function toColor( v, color ) { return '<span style="color:' + color + ';"><b>' + v + '</b></span>' ; }
+	function withTitle( v, title ) { return '<span style="color:red;" title="' + title + '" ><b>' + v + '</b></span>' ; }
+	function toCommas( x ) { if ( x == null ) return '' ; return x.toString().replace( /\B(?=(\d{3})+(?!\d))/g, "," ) ; }
+	function tr( l ) { return $( '<tr>' ).append( $( '<td>' ).text( l ) ).append( $( '<td>' ) ) ; }
+	function headClick( td ) {
+		var x = td.data( 'show_state' ) ;
+		x = ( ( x == null ? 0 : parseInt( x ) ) + 1 ) % 3 ;
+		var t = td.next().find( 'table' ).eq( 0 ) ;
+		switch ( x ) {
+			case 1 : t.find( 'tr' ).hide().slice( 0, 11 ). show(); break ;
+			case 2 : t.find( 'tr' ).show(); break ;
+			case 0 : t.find( 'tr' ).hide(); break ;
+		}
+		td.data( 'show_state', x ) ;
+	}
+
+	//var data = __data__ ;
+	$(document).ready(function () {
+	    var url = decodeURIComponent(window.location.pathname);
+	    var path = url.substr(url.indexOf("/member/") + 8, 20);
+	    console.log(path);
+	    $.get( AppPath + "/api1/member/"+path, function( data ) {  console.log( data ) ; showMember( data ) ; } ) ;
+	    //showMember( data ) ;
+	});
+
+    </script>
+</head>
+<body style="font-family:Arial;font-size:small;">
+
+    <div id="waitmsg" style="padding:3cm;font-size:x-large;text-align:center;">..... loading .....</div>
+    <table cellspacing="6pt" cellpadding="0pt" width="100%"><tbody id="memberdata"></tbody></table>
+
+</body>
+</html>

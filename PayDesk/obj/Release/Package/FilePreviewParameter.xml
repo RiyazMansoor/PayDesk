@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="192.168.1.1/paydesk" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\riyaz\.mansoor\\Documents\\WebProjects\\PayDesk\\PayDesk\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\riyaz\.mansoor\\Documents\\WebProjects\\PayDesk\\PayDesk\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

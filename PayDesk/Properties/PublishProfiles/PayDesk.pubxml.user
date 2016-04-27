@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://192.168.5.79/</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/15/2016 12:40:57</publishTime>
+    </File>
+    <File Include="bin/PayDesk.dll">
+      <publishTime>03/27/2016 08:48:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>03/15/2016 12:40:09</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/15/2016 12:40:09</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/15/2016 12:40:09</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/15/2016 12:40:09</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/15/2016 12:40:10</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>03/15/2016 12:40:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>03/15/2016 12:40:58</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>03/15/2016 12:40:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/15/2016 15:41:13</publishTime>
+    </File>
+    <File Include="html/jquery.min.js">
+      <publishTime>03/19/2016 20:19:09</publishTime>
+    </File>
+    <File Include="html/MemberDnrSearch.html">
+      <publishTime>03/23/2016 19:10:14</publishTime>
+    </File>
+    <File Include="html/MemberOverview.html">
+      <publishTime>03/23/2016 19:08:10</publishTime>
+    </File>
+    <File Include="html/PaymentPortal.html">
+      <publishTime>03/20/2016 00:12:29</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/19/2016 19:21:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>03/27/2016 08:48:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

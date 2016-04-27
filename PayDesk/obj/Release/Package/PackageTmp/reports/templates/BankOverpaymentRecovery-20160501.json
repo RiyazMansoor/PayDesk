@@ -1,0 +1,101 @@
+[
+    {
+        "templateName": "BankOverpaymentRecovery",
+        "templateType": "docx",
+        "separatorDbTable": 1,
+        "bookmark_settings": {
+            "db_table": 1,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                },
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "AddresseeName",
+                    "bookmark_name": "AddresseeName"
+                },
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "AddresseeDesignation",
+                    "bookmark_name": "AddresseeDesignation"
+                },
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "AddresseeBank",
+                    "bookmark_name": "AddresseeBank"
+                },
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "AddresseeName",
+                    "bookmark_name": "AddresseeName2"
+                }
+            ]
+        },
+        "grid_settings": {
+            "db_table": 2,
+            "doc_table": 0,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "MIdentifier",
+                    "format": "None",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "MemberName",
+                    "format": "None",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "DoDeath",
+                    "format": "YearMonthDate",
+                    "doc_table_col": 2
+                },
+                {
+                    "db_table_field_name": "AccName",
+                    "format": "None",
+                    "doc_table_col": 3
+                },
+                {
+                    "db_table_field_name": "AccNumber",
+                    "format": "None",
+                    "doc_table_col": 4
+                },
+                {
+                    "db_table_field_name": "OvpTotal",
+                    "format": "Rufiya",
+                    "doc_table_col": 5
+                }
+            ]
+        }
+    },
+    {
+        "templateName": "BankAddresseeTable",
+        "templateType": "xlsx",
+        "separatorDbTable": 3,
+        "grid_settings": {
+            "db_table": 4,
+            "xlx_sheet_index": 0,
+            "grid_start_row": 2,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "BankCode",
+                    "format": "None"
+                },
+                {
+                    "db_table_field_name": "BankCode",
+                    "format": "AddresseeName"
+                },
+                {
+                    "db_table_field_name": "BankCode",
+                    "format": "AddresseeDesignation"
+                },
+                {
+                    "db_table_field_name": "BankCode",
+                    "format": "AddresseeBank"
+                }
+            ]
+        }
+    }
+]

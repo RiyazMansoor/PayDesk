@@ -1,0 +1,174 @@
+[
+    {
+        "templateName": "StatePensionTopUp",
+        "templateType": "xlsx",
+        "separatorDbTable": 1,
+        "grid_settings": [
+            {
+                "db_table": 2,
+                "xlx_sheet_index": 3,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PostingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ValueDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TranTypeDesc",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ChequeNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "EmployerId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TrackingNo",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Debit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Credit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "SchemeId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 3,
+                "xlx_sheet_index": 2,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PostingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ValueDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TranTypeDesc",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ChequeNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "EmployerId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TrackingNo",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Debit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Credit",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 4,
+                "xlx_sheet_index": 1,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PostingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ValueDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TranTypeDesc",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ChequeNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "EmployerId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TrackingNo",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Debit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Credit",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 5,
+                "xlx_sheet_index": 0,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PostingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ValueDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TranTypeDesc",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ChequeNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "EmployerId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TrackingNo",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Debit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Credit",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
