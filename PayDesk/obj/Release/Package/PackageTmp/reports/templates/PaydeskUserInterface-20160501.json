@@ -7,12 +7,12 @@
     {
         "rptName": "Overpayment Letter - Single Account",
         "rptType": "Weekly",
-        "rptUrl":  "/report/overpaymentlettersingleaccount/"
+        "rptUrl":  "/report/overpaymentreferee1/"
     },
     {
         "rptName": "Overpayment Letter - Joint Account",
         "rptType": "Weekly",
-        "rptUrl":  "/report/overpaymentletterjointaccount/"
+        "rptUrl":  "/report/overpaymentreferee2/"
     },
     {
         "rptName": "Member Overpayment Status",

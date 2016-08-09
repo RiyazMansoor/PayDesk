@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var menu = {
+            title: "Checklists",
+            titlelink: "..",
+            units: [
+                { code: "pcd", name: "Pensions &amp; Claims Department" },
+                { code: "afd", name: "Administration &amp; Finance Division" },
+                { code: "itd", name: "Information Technology Department" },
+            ],
+            pages: [
+                { code: "pcd", name: "Payment Uncollected", value: "payoutpaymentuncollected/", tags: [ 'payout', 'weekly', 'pc-dept' ] },
+                { code: "pcd", name: "Post Liquidation Arrears", value: "postliquidationportfolio/", tags: [ 'mrps', 'weekly', 'ce-dept' ] },
+                { code: "pcd", name: "Payment Arrears", value: "paymentarrears/", tags: [ 'overpayment', 'error', 'weekly', 'pc-dept' ] },
+                { code: "itd", name: "Foreigner Beneficiary Start Month", value: "beneficiarystartdate/", tags: [ 'payout', 'foreigner', 'it-dept' ] },
+                { code: "itd", name: "Incorrect Death Overpayments", value: "incorrectdeathoverpayment/", tags: [ 'overpayment', 'weekly', 'it-dept' ] },
+                { code: "itd", name: "Mirror Master Error Log", value: "mirrormastererrorlog/", tags: [ 'master', 'it-dept' ] },
+                { code: "itd", name: "Mrps Master Exhausted", value: "mrpsmasterexhausted/", tags: [ 'mrps', 'master', 'it-dept' ] },
+                { code: "itd", name: "Mrps Conservative Negative", value: "mrpsconservativenegative/", tags: [ 'mrps', 'it-dept' ] },
+                { code: "itd", name: "Billing Mismatch Transaction", value: "billingmismatchtransaction/", tags: [ 'billing', 'error', 'it-dept' ] },
+                { code: "itd", name: "Payment Mismatch Transaction", value: "paymentmismatchtransaction/", tags: [ 'payout', 'error', 'it-dept' ] },
+                { code: "pcd", name: "System Payment Rejections", value: "payoutpaymentprerejection/", tags: [ 'payout', 'weekly', 'pc-dept' ] },
+                { code: "pcd", name: "Members to be Suspended", value: "payoutpaymentsuspension/", tags: [ 'payout', 'pc-dept' ] },
+                { code: "pcd", name: "Large Overpayments", value: "largeoverpayment/", tags: [ 'overpayment', 'weekly', 'pc-dept' ] },
+                { code: "afd", name: "Payout In, Billing Out", value: "payoutinbillingout/", tags: [ 'audit', 'billing', 'payout', 'ad-dept' ] },
+                { code: "afd", name: "Billing In, Payout Out", value: "billinginpayoutout/", tags: [ 'audit', 'billing', 'payout', 'ad-dept' ] },
+                { code: "afd", name: "Recently Accepted SBS", value: "sbsrecent/", tags: [ 'audit', 'sbs', 'ad-dept' ] },
+                { code: "pcd", name: "Mrps Not Applied", value: "mrpsnotapplied/", tags: [ 'mrps', 'pc-dept' ] },
+                { code: "pcd", name: "Mrps Foreigners Balance Remaining", value: "mrpsforeignerbalanceremaining/", tags: [ 'mrps', 'foreigner', 'pc-dept' ] },
+                { code: "pcd", name: "Retirement Package Overlap", value: "retirementpackageoverlap/", tags: ['audit', 'sbs', 'error', 'pc-dept'] },
+                { code: "pcd", name: "NO Mrps BUT Pending Transactions", value: "NoMrpsActiveTransactions/", tags: [ 'mrps', 'it-dept', 'pc-dept'] },
+                { code: "pcd", name: "NON Eligible BUT Active Transactions", value: "NonEligibleActiveTransactions/", tags: [ 'bp', 'sbs', 'it-dept', 'pc-dept'] },
+            ]
+        };
+
+        $( document ).ready( function ()
+        {
+            MenuPageReady();
+        } );
+
+    </script>
+</head>
+<body>
+</body>
+</html>

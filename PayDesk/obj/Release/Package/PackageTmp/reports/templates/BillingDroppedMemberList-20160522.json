@@ -1,0 +1,537 @@
+[
+    {
+        "templateName": "BillingNewMemberList",
+        "templateType": "xlsx",
+        "separatorDbTable": 1,
+        "grid_settings": [
+            {
+                "db_table": 3,
+                "xlxSheetName": "11",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 4,
+                "xlxSheetName": "333",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 5,
+                "xlxSheetName": "10101",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 6,
+                "xlxSheetName": "10102",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 7,
+                "xlxSheetName": "10103",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 8,
+                "xlxSheetName": "11113",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 9,
+                "xlxSheetName": "11114",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 10,
+                "xlxSheetName": "11115",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 11,
+                "xlxSheetName": "11116",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 12,
+                "xlxSheetName": "20104",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 13,
+                "xlxSheetName": "20105",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 14,
+                "xlxSheetName": "20106",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 15,
+                "xlxSheetName": "20107",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 16,
+                "xlxSheetName": "20108",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 17,
+                "xlxSheetName": "20109",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 18,
+                "xlxSheetName": "20110",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            },
+            {
+                "db_table": 19,
+                "xlxSheetName": "20111",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoDeath",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+] 
+

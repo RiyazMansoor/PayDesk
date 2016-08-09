@@ -133,32 +133,34 @@
         "templateName": "EnvelopTable",
         "templateType": "xlsx",
         "separatorDbTable": 3,
-        "grid_settings": {
-            "db_table": 4,
-            "xlx_sheet_index": 0,
-            "grid_start_row": 2,
-            "grid_columns": [
-                {
-                    "db_table_field_name": "DIdentifier",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "DSex",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "DSex",
-                    "format": "TitleMv"
-                },
-                {
-                    "db_table_field_name": "DnrMemberNameMv",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "DnrFullAddressMv",
-                    "format": "None"
-                }
-            ]
-        }
+        "grid_settings": [
+            {
+                "db_table": 4,
+                "xlxSheetName": "Sheet1",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "DIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DSex",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DSex",
+                        "format": "LiveTitleMv"
+                    },
+                    {
+                        "db_table_field_name": "MemberNameMv",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberAddressMv",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
     }
 ]

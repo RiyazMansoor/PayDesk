@@ -1,0 +1,59 @@
+[
+    {
+        "templateName": "PayoutRejectionBml",
+        "templateType": "xlsx",
+        "separatorDbTable": 1,
+        "spot_settings": [
+            {
+                "db_table": 1,
+                "xlx_sheet_index": 0,
+                "spots": [
+                    {
+                        "db_table_field_name": "XlsxFilename",
+                        "format": "None",
+                        "cell_row": 0,
+                        "cell_col": 0
+                    }
+                ]
+            }
+        ],
+        "grid_settings": [
+            {
+                "db_table": 2,
+                "xlxSheetName": "Sheet1",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PaymentId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccPrefix",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccCustomer",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccSuffix",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PensionMonth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PaidAmount",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+] 
+

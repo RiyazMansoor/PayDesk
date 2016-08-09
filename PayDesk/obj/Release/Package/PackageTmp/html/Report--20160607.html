@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var dbsynctime = 'sync time';
+        var menu = {
+            title: "Custom Reports",
+            titlelink: "..",
+            units: [
+                { code: "pcd", name: "Pensions &amp; Claims Department" },
+                { code: "prd", name: "Public Relations Department" },
+                { code: "fmd", name: "Fund Management Division" },
+                { code: "ard", name: "Audit &amp; Risk Division" },
+            ],
+            pages: [
+                { code: "fmd", name: "MRPS Monthly Payments Summary", value: "mrpsmonthlypayments/" },
+                { code: "prd", name: "Death Processing", value: "deathprocessing/" },
+                { code: "prd", name: "Basic Pensioners by Atoll", value: "atollbasicpensioner/" },
+                { code: "pcd", name: "Koshaaru deposits to Fines Account ", value: "mrpsfinesaccount/" },
+                { code: "pcd", name: "Bank Account Verification ", value: "bankaccountverification/" },
+                { code: "ard", name: "Listing for Member-Ids", value: "memberidlist/" },
+                { code: "ard", name: "Listing for Payment-Ids", value: "paymentidlist/" },
+                { code: "ard", name: "Billing Over The Years", value: "billingovertheyears/" },
+                { code: "ard", name: "Payments Over The Years", value: "paymentovertheyears/" },
+                { code: "pcd", name: "Koshaaru Payout Files", value: "payoutfiles/" },
+                { code: "pcd", name: "Koshaaru Files", value: "koshaarufiles/" },
+            ]
+        };
+
+        $( document ).ready( function ()
+        {
+            MenuPageReady() ;
+        } );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

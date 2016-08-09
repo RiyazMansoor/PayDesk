@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "MRPS Conservative Negative",
+                tables: [
+                    {
+                        tablekey: "table1",
+                        columns: [
+                            { head: "Identifier", field: "MIdentifier", formats: [] },
+                            { head: "Member-Id", field: "MemberId", formats: [{ type: "fmtLinkMemberId" }] },
+                            { head: "Member-Name", field: "MemberName", formats: [] },
+                            { head: "DoBirth", field: "DoBirth", formats: [{ type: "fmtDate" }] },
+                            { head: "P-30", field: "P30V", formats: [{ type: "fmtMoney" }] },
+                            { head: "P-31", field: "P30V", formats: [{ type: "fmtMoney" }] },
+                        ]
+                    }
+                ]
+            }
+        ;
+
+        $( document ).ready( function ()
+        {
+            CenteredDataTableReady();
+        } );
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

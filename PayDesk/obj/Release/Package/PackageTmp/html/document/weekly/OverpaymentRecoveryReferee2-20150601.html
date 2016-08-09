@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "Overpayment Recovery via Referee - Joint Account",
+                caption: null,
+                tablekey: "table1",
+                columns: [
+                    { head: "Identifier", field: "MIdentifier", formats: [{ type: "fmtLinkMemberDnr" }] },
+                    { head: "Member-Id", field: "MMemberId", formats: [{ type: "fmtLinkMemberId" }] },
+                    //{ head: "Member-Name", field: "MMemberName", formats: [] },
+                    //{ head: "DoDeath", field: "MDoDeath", formats: [{ type: "fmtDate" }] },
+                    { head: "Member-Name-Mv", field: "MMemberNameMv", formats: [{ type: "fmtPhoneticMv" }] },
+                    //{ head: "Acc-Type", field: "MAccType", formats: [{ type: "fmtBankAccType" }] },
+                    { head: "Ref-Identifier", field: "RIdentifier", formats: [{ type: "fmtLinkMemberDnr" }] },
+                    { head: "Ref-Member-Id", field: "RMemberId", formats: [{ type: "fmtLinkMemberId" }] },
+                    //{ head: "Ref-Member-Name", field: "RMemberName", formats: [] },
+                    { head: "Ref-DoDeath", field: "RDoDeath", formats: [{ type: "fmtDate" }] },
+                    { head: "Ref-Member-Name-Mv", field: "RMemberNameMv", formats: [{ type: "fmtPhoneticMv" }] },
+                ]
+            }
+        ;
+
+	    $( document ).ready( function ()
+	    {
+            CenteredDataTableReady();
+	    } );
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

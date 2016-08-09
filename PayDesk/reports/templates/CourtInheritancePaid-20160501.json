@@ -1,0 +1,85 @@
+[
+    {
+        "templateName": "CourtInheritancePaid",
+        "templateType": "docx",
+        "separatorDbTable": 1,
+        "bookmark_settings": {
+            "db_table": 1,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                }
+            ]
+        },
+        "spot_settings": [
+            {
+                "db_table": 1,
+                "doc_table": 0,
+                "spots": [
+                    {
+                        "db_table_field_name": "ReportSeparator",
+                        "format": "None",
+                        "doc_table_row": 0,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "MMemberNameAddressMv",
+                        "format": "PhoneticMv",
+                        "doc_table_row": 0,
+                        "doc_table_col": 2
+                    },
+                    {
+                        "db_table_field_name": "CourtName",
+                        "format": "None",
+                        "doc_table_row": 1,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "CourtAccount",
+                        "format": "None",
+                        "doc_table_row": 2,
+                        "doc_table_col": 1
+                    }
+                ]
+            }
+        ],
+        "grid_settings": {
+            "db_table": 2,
+            "doc_table": 1,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "PensionType",
+                    "format": "PensionType",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "PaidAmount",
+                    "format": "Rufiya",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "PaidTime",
+                    "format": "YearMonthDate",
+                    "doc_table_col": 2
+                }
+            ],
+            "footer_settings": {
+                "db_table": 3,
+                "doc_table_row": [
+                    {
+                        "db_table_field_name": "ReportSeparator",
+                        "format": "JumlaMv",
+                        "doc_table_col": 0
+                    },
+                    {
+                        "db_table_field_name": "MTotal",
+                        "format": "Rufiya",
+                        "doc_table_col": 1
+                    }
+                ]
+            }
+        }
+    }
+]

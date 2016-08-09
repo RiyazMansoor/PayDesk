@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <style>
+        tr > td {
+            vertical-align: middle;
+            text-align: left;
+            padding: 10pt;
+            margin: 4pt;
+            border-radius: 4pt;
+            background-color: white;
+        }
+        tr > td:nth-child( 1 ) {
+            font-size: large;
+            font-weight: bold;
+            width: 4cm;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+            text-align: left;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+            $( 'span[url]' ).click( function ( e ) { window.open( $( this ).attr( 'url' ), "_self" ); } );
+        });
+
+    </script>
+    <title>Versions; Payment Portal</title>
+</head>
+<body style="text-align:left;">
+
+    <div class="atitle" style="padding-bottom:1cm;"><span class="thetitle" url="..">The Payment Portal</span></div>
+    Pensions &amp; Claims Department - <br /><br /><br /><br />
+
+    <table cellspacing="6" cellpadding="0" width="100%">
+        <tbody>
+            <tr>
+                <td>2016-06-15 v2</td>
+                <td>
+                    <ol>
+                        <li>create framework for dynamic creation of word, excel files using openxml</li>
+                        <li>create framework for dynamic creation of csv, zip files</li>
+                        <li>provide member information additionally by <i>payment id</i></li>
+                        <li>provide excel download link of member information by <i>identifier</i>, <i>member id</i> and <i>payment id</i>, </li>
+                        <li>increase mpao dnr search service results - first matching 20 results</li>
+                        <li>create live dnr search service results, with ltr dhivehi typewriter font and right left dhivehi phonetichh font</li>
+                        <li>created generic url "debug/phonetic/?" where ltr dhivehi is translated to phonetichh dhivehi</li>
+                        <li>all ltr dhivehi dynamically converted to phonetichh dhivehi in all documents/reports</li>
+                        <li>create sections for different types of services for all services on portal</li>
+                        <li>added landing pages for each section</li>
+                        <li>new section for workflow informtion ( note: after initial workflow resolvements, the period will be changed to a rolling 6 months )</li>
+                        <ol>
+                            <li>Assigned members who have been disabled</li>
+                            <li>Assigned members who do NOT have the role to do the work</li>
+                            <li>Assigned Roles without any [active] members</li>
+                            <li>Bottleneck events - in terms of number of pending similar events</li>
+                            <li>Seaching active workflows</li>
+                            <ol>
+                                <li>Show all workflows</li>
+                                <li>Show workflows as identified as having issues ( first three categories above )</li>
+                                <li>Show workflows by workflow type</li>
+                                <li>Show workflows by user</li>
+                            </ol>
+                        </ol>
+                        <li>new section for checklists</li>
+                        <ol>
+                            <li>Pension &amp; Claims Department</li>
+                            <ol>
+                                <li>Payments Uncollected - based on specific non payment criteria, members who can be checked for possible death</li>
+                                <li>Post Liquidation Investment Portfolios - balances in investment portfolios after liquidation</li>
+                                <li>Payment Arrears - undeclared overpayments and underpayments</li>
+                                <li>System Payment Rejections - Investigate why system rejected payment</li>
+                                <li>Members to be Suspended - Possible overpayment via as yet unverified death</li>
+                                <li>Large Overpayments - All cases of large overpayments</li>
+                            </ol>
+                            <li>Administration &amp; Finance Division</li>
+                            <ol>
+                                <li>Payout In, Billing Out - for the same month</li>
+                                <li>Billing In, Payout Out - for the same month</li>
+                                <li>Recently Acceptedd SBS - recently accepted sbs</li>
+                            </ol>
+                            <li>Information Technology Department</li>
+                            <ol>
+                                <li>Foreigner Beneficiary Start Date - Koshaaru bug which stops payment to foreigners</li>
+                                <li>Incorrect Death Overpayments - Payments returned but overpayments NOT reversed</li>
+                                <li>Mirror Master Error Log - Errors to be resolved</li>
+                                <li>MRPS Master exhausted - Cases that may require restart of master</li>
+                                <li>MRPS Conservative Negative - Negative MRPS balances</li>
+                                <li>Billing Mismatch Transaction - Billing does not match with linked transactions</li>
+                                <li>Payment Mismatch Transaction - Payment does not match with linked transactions</li>
+                            </ol>
+                        </ol>
+                        <li>new section for custom reports</li>
+                        <ol>
+                            <li>Pension &amp; Claims Department</li>
+                            <ol>
+                                <li>Active Bank Account Verification Files - when koshaaru refuses to give these files ; c/o Me</li>
+                            </ol>
+                            <li>Public Relations Department</li>
+                            <ol>
+                                <li>Basic Pensioners on Island - list of basic pensioners for island councils ; c/o Fazna</li>
+                                <li>Death Processing - identify members already in proessing ; c/o Reception</li>
+                            </ol>
+                            <li>Fund Management Division</li>
+                            <ol>
+                                <li>MRPS Payout Monthly Summary - monthly totals for mrps ( including early retirement ) ; c/o Shahudh</li>
+                            </ol>
+                            <li>Audit &amp; Risk Division</li>
+                            <ol>
+                                <li>Billing Over The Years - monthly billing variation</li>
+                                <li>Payments Over The Years - monthly payment variation</li>
+                                <li>Listing for Member-Ids - conversion of member ids to member information</li>
+                                <li>Listing for Payment-Ids - conversion of payment ids to member information</li>
+                            </ol>
+                        </ol>
+                        <li>new section for PCD documents</li>
+                        <ol>
+                            <li>Anytime reports</li>
+                            <ol>
+                                <li>Member Overpayment Status - genertic full overpayment report for a member as word file</li>
+                                <li>Court Inheritance Response Notification - generic response to court for inheritance requests of deceased member</li>
+                                <li>Court Inheritane Paid Notification - generic response to court upon payment of inheritance</li>
+                                <li>Active Billing Reconciliation - generates CSV files towards payouts for billed pension types</li>
+                            </ol>
+                            <li>Weekly reports</li>
+                            <ol>
+                                <li>Bank Overpayment Recovery; letters sent to banks to reverse payments in lieu of death and single accounts </li>
+                                <li>Overpayment Recovery; Referee Notification - Single Account - letters sent to referees after bank recovery fails </li>
+                                <li>Overpayment Recovery; Referee Notification - Joint Account - letters sent to referees requesting repayment</li>
+                            </ol>
+                            <li>Monthly reports</li>
+                            <ol>
+                                <li>Retirement Notification; monthly notifications sent to retirees before 6 months</li>
+                                <li>New Overpayment Notification; monthly notifications informing members that new overpayments were recorded in the previous month</li>
+                                <li>New SBS Audit; monthly communications to sbs institutions regarding submitted sbs forms</li>
+                            </ol>
+                        </ol>
+                        <li>screenshots <a href="../screenshots/v1/1.png">1</a>, <a href="../screenshots/v1/2.png">2</a></li>
+                        </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>2016-03-20 v1</td>
+                <td>
+                    <ol>
+                        <li>establish framework REST based url  access for all services on portal</li>
+                        <li>establish framework JSON based data access for all services on portal</li>
+                        <li>establish framework JSON based API access for all services on portal</li>
+                        <li>dynamic reloading of all static resources ( from url )</li>
+                        <li>provide member information by <i>identifier</i> and <i>member id</i></li>
+                        <li>provide dnr search service based on member name, address and island - first matching 10 results</li>
+                        <li>screenshots <a href="../screenshots/v0/1.png">1</a>, <a href="../screenshots/v0/2.png">2</a>, <a href="../screenshots/v0/3.png">3</a></li>
+                    </ol>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

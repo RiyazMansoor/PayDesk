@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DNR ( Live ) Service</title>
+    <style type="text/css">
+
+        #memberdata > tr > td {
+            text-align: left;
+            padding: 10pt;
+            margin: 4pt;
+            border-radius: 4pt;
+            background-color: lightgreen;
+        }
+
+        #memberdata tr > td {
+            width: 4cm;
+            font-family:Arial;
+        }
+        #memberdata > tr > td:nth-child( 1 ) {
+            vertical-align: top;
+            font-size: large;
+            font-weight: bold;
+            width: 4cm;
+            text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+        }
+        #memberdata tr > td:nth-child( 3 ) {
+            font-family: A_Randhoo;
+        }
+        #memberdata tr > td:nth-child( 4 ) {
+            font-family: Faruma;
+        }
+ 
+    </style>
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script>
+
+	function showMember( json ) {
+
+	    if ( json.exceptionMessage ) {
+	        $('#waitmsg').html('<span style="color:red"><b>' + json.exceptionMessage + '</span>');
+	        return 0 ;
+	    }
+
+	    $('#waitmsg').hide();
+
+	    $('#memberdata > tr:nth-child(1) > td:nth-child(2)').attr('class', 'spanValue').html( '<a href="' + window.location.pathname + '/../../identifier/' + json.IDNUMBER + '">' + json.IDNUMBER);
+	    $('#memberdata > tr:nth-child(2) > td:nth-child(2)').attr('class', 'spanValue').html(json.GENDER == 0 ? 'Male' : 'Female' );
+	    $('#memberdata > tr:nth-child(3) > td:nth-child(2)').attr('class', 'spanValue').html( json.DOBIRTH);
+	    $('#memberdata > tr:nth-child(4) > td:nth-child(2)').attr('class', 'spanValue').html( json.DODEATH);
+	    $('#memberdata > tr:nth-child(5)').append(tdStr(json.ENGFNAME)).append(tdStr(json.DHIVFNAME)).append(tdStr(json.MVDHIVFNAME));
+	    $('#memberdata > tr:nth-child(6)').append(tdStr(json.ENGMNAME)).append(tdStr(json.DHIVMNAME)).append(tdStr(json.MVDHIVMNAME));
+	    $('#memberdata > tr:nth-child(7)').append(tdStr(json.ENGLNAME)).append(tdStr(json.DHIVLNAME)).append(tdStr(json.MVDHIVLNAME));
+	    $('#memberdata > tr:nth-child(8)').append(tdStr(json.ENGDISTRICT)).append(tdStr(json.DHIVDISTRICT)).append(tdStr(json.MVDHIVDISTRICT));
+	    $('#memberdata > tr:nth-child(9)').append(tdStr(json.ENGHOME)).append(tdStr(json.DHIVHOME)).append(tdStr(json.MVDHIVHOME));
+	    $('#memberdata > tr:nth-child(10)').append(tdStr(json.ENGISLAND)).append(tdStr(json.DHIVISLAND)).append(tdStr(json.MVDHIVISLAND));
+	    $('#memberdata > tr:nth-child(11)').append(tdStr(json.ENGATOLL)).append(tdStr(json.DHIVATOLL)).append(tdStr(json.MVDHIVATOLL));
+	    $('#memberdata > tr:nth-child(12) > td:nth-child(2)').attr('class', 'spanValue').html( '<img width="300" src="data:image/png;base64,' + json.PHOTO + '" />');
+	    $('#memberdata').css('visibility', 'visible');
+
+	}
+
+	function tdStr( v ) { return '<td class="spanValue">' + ( v == null ? '' : v ) + '</td>' ; }
+
+	//var data = __data__ ;
+	$(document).ready(function () {
+
+	    var counter = 0;
+	    var myInterval = setInterval(function () { counter += 1; $('#waitmsg').text('..... loading ' + counter + ' seconds .....'); }, 1000);
+	    var url = decodeURIComponent(window.location.pathname);
+	    var path = url.substr(url.indexOf("/member/"), 30);
+	    console.log(path);
+	    $.get("../../api1" + path, function (data) { clearInterval(myInterval); showMember(data); })
+
+	    $('span[url]').click(function (e) { window.open($(this).attr('url'), '_self'); })
+
+	});
+
+    </script>
+</head>
+<body style="background-color:white;font-family:Arial;">
+
+    <div id="waitmsg" style="padding:3cm;font-size:x-large;text-align:center;">..... loading 0 seconds .....</div>
+
+    <table cellspacing="6" cellpadding="0">
+        <tbody id="memberdata" style="visibility:hidden;">
+            <tr><td>Identifier</td><td colspan="3" ></td></tr>
+            <tr><td>Gender</td><td colspan="3"></td></tr>
+            <tr><td>DoBirth</td><td colspan="3"></td></tr>
+            <tr><td>DoDeath</td><td colspan="3"></td></tr>
+            <tr><td>FirstName</td></tr>
+            <tr><td>MiddleName</td></tr>
+            <tr><td>LastName</td></tr>
+            <tr><td>District</td></tr>
+            <tr><td>Address</td></tr>
+            <tr><td>Island</td></tr>
+            <tr><td>Atoll</td></tr>
+            <tr><td>Photo</td><td colspan="3"></td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

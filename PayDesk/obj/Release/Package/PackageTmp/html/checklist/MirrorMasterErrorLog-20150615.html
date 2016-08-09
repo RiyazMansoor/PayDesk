@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "Mirror Master Error Log",
+                caption: null,
+                tablekey: "table1",
+                columns: [
+                    { head: "Log-Id", field: "ProcessingLogId", formats: [] },
+                    { head: "Master-Id", field: "PensionMasterId", formats: [] },
+                    { head: "Error", field: "ErrorDesc", formats: [] },
+                    { head: "Logged-time", field: "LoggedDate", formats: [{ type: "fmtDateTime" }] },
+                ]
+            }
+        ;
+
+        $( document ).ready( function ()
+        {
+            CenteredDataTableReady();
+        } );
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

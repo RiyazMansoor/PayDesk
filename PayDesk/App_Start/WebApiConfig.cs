@@ -16,7 +16,7 @@ namespace PayDesk
             config.Routes.MapHttpRoute(
                     name: "PayDesk",
                     routeTemplate: "{*.uri}",
-                    defaults: new { controller = "Ui1", action = "PaymentPortalHtml" }
+                    defaults: new { controller = "Ui1", action = "PortalUiHtml" }
                 );
 
             //config.Routes.MapHttpRoute(

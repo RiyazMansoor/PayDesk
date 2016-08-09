@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var menu = {
+            title: "Official Document Generation",
+            depts: [
+                { code: "pcd", name: "Pensions &amp; Claims Department" },
+                { code: "prd", name: "Public Relations Department" },
+                { code: "afd", name: "Admin &amp; Finance Division" },
+                { code: "fmd", name: "Fund Management Division" },
+            ],
+            units: [
+                { code: "anytime", name: "Anytime" },
+                { code: "weekly", name: "Weekly" },
+                { code: "monthly", name: "Monthly" },
+            ],
+            pages: [
+                { code: "prdanytime", name: "Member Payout Statement", value: "anytime/memberpayoutstatement/" },
+                { code: "pcdanytime", name: "Member Overpayment Status", value: "anytime/memberoverpaymentstatus/" },
+                { code: "pcdanytime", name: "Court Inheritance Amount Notice", value: "anytime/courtinheritanceamount/" },
+                { code: "pcdanytime", name: "Court Inheritance Paid Notification", value: "anytime/courtinheritancepaid/" }, 
+                { code: "pcdanytime", name: "Billing Reconciliation =&gt; Payout Generation", value: "anytime/billingreconciliation/" },
+                { code: "pcdanytime", name: "Payout Rejection, BML", value: "anytime/payoutrejectionbml/" },
+                { code: "pcdanytime", name: "Payout Rejection, NON BML", value: "anytime/payoutrejectionnonbml/" },
+                { code: "pcdweekly", name: "Bank Overpayment Recovery", value: "weekly/bankoverpaymentrecovery/" },
+                { code: "pcdweekly", name: "Overpayment Recovery; Single Account", value: "weekly/overpaymentrecoveryreferee1/" },
+                { code: "pcdweekly", name: "Overpayment Recovery; Joint Account", value: "weekly/overpaymentrecoveryreferee2/" },
+                { code: "pcdmonthly", name: "Retirement Notification", value: "monthly/retirementnotification/" },
+                { code: "pcdmonthly", name: "New Overpayment Notification", value: "monthly/newoverpaymentnotification/" },
+                { code: "pcdmonthly", name: "New SBS Audit", value: "monthly/newsbsaudit/" },
+                { code: "afdmonthly", name: "Billing New Member List", value: "monthly/billingnewmemberlist/" },
+                { code: "afdmonthly", name: "Billing Dropped Member List", value: "monthly/billingdroppedmemberlist/" },
+                { code: "fmdmonthly", name: "Bank Reversals", value: "monthly/payoutbankreversal/" },
+                { code: "afdmonthly", name: "In Billing, Out Payout", value: "monthly/inbillingoutpayout/" },
+                { code: "afdmonthly", name: "Out Billing, In Payout", value: "monthly/outbillinginpayout/" },
+            ]
+        };
+
+        $( document ).ready( function ()
+        {
+            MenuPage2Ready();
+        } );
+
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+[
+    {
+        "templateName": "MemberPayoutStatement",
+        "templateType": "docx",
+        "separatorDbTable": 1,
+        "bookmark_settings": {
+            "db_table": 1,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                }
+            ]
+        },
+        "spot_settings": [
+            {
+                "db_table": 1,
+                "doc_table": 0,
+                "spots": [
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None",
+                        "doc_table_row": 2,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None",
+                        "doc_table_row": 1,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "MemberAddress",
+                        "format": "None",
+                        "doc_table_row": 3,
+                        "doc_table_col": 1
+                    }
+                ]
+            },
+            {
+                "db_table": 1,
+                "doc_table": 1,
+                "spots": [
+                    {
+                        "db_table_field_name": "BankBranch",
+                        "format": "None",
+                        "doc_table_row": 1,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "AccNumber",
+                        "format": "None",
+                        "doc_table_row": 2,
+                        "doc_table_col": 1
+                    },
+                    {
+                        "db_table_field_name": "AccName",
+                        "format": "None",
+                        "doc_table_row": 3,
+                        "doc_table_col": 1
+                    }
+                ]
+            }
+        ],
+        "grid_settings": {
+            "db_table": 2,
+            "doc_table": 2,
+            "grid_columns": [
+                {
+                    "db_table_field_name": "PensionType",
+                    "format": "PensionName",
+                    "doc_table_col": 0
+                },
+                {
+                    "db_table_field_name": "Commenced",
+                    "format": "YearMonthDate",
+                    "doc_table_col": 1
+                },
+                {
+                    "db_table_field_name": "TransactAmount",
+                    "format": "Rufiya",
+                    "doc_table_col": 2
+                }
+            ]
+        }
+    }
+]

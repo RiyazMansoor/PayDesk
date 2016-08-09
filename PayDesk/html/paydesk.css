@@ -1,0 +1,138 @@
+﻿
+body {
+    font-family: Arial;
+    font-size: medium;
+    text-align: center;
+    background-color: lightgreen; 
+}
+
+span.atitle, span.thetitle, span.menu {
+    font-size:x-large;
+    margin-top: 1cm;
+    padding-bottom: .6cm;
+    text-shadow: .2em .2em .4em green;
+    cursor: pointer;
+    display: inline-block;
+}
+span.thetitle {
+    font-weight:bold;
+    font-size:xx-large;
+    padding-bottom: .4cm;
+}
+span.atitle:hover, span.thetitle:hover, span.menu:hover {
+    text-shadow: .2em .2em .4em yellow;
+}
+span.menu {
+    margin-top: .2cm;
+    font-size:large;
+    padding-bottom: unset;
+    text-align:center;
+}
+
+/*
+.textbox, .buttons {
+    border-radius: 6pt;
+    border: 1pt solid gray;
+    padding: 4pt;
+    text-align: center;
+    width: 3cm;
+    font-size: large;
+}
+.buttons:hover {
+    border: 2pt solid black;
+    padding: 3pt;
+}
+.spanValue {
+    font-size: medium;
+    padding: 2pt 6pt 2pt 4pt;
+    margin-right: 12pt;
+    border-radius: 2pt;
+    background-color: white;
+}
+*/
+
+
+/* wait message when loading */
+#waitmsg 
+{
+    padding: 3cm;
+    font-size:xx-large;
+    text-align:center;
+}
+#version
+{
+    margin-bottom: 1.5cm;
+    text-shadow: .2em .2em .4em green;
+    display: block;
+}
+/* page centered data tables */ 
+
+#centereddatatable, #inputtable, #menutable, .centereddatatable, .inputtable, .menutable
+{
+    font-family:Arial;
+    border-spacing: 6pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tablecaption
+{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 6pt;
+    margin-bottom: 1cm;
+    padding: 6pt 1cm 6pt 1cm;
+    background-color: white;
+    border-radius: 3pt;
+}
+#centereddatatable  tr > td, .spanValue {
+    vertical-align: middle;
+    text-align: left;
+    font-size: medium;
+    padding: 3pt 8pt 3pt 8pt;
+    margin-right: 12pt;
+    border-radius: 3pt;
+    background-color: white;
+}
+#centereddatatable tr:first-child, #inputtable tr > td:first-child {
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+#centereddatatable tr:first-child td {
+    background-color: unset;
+}
+#inputtable {
+    border-spacing: .7cm;
+    border: groove;
+    border-radius: 6pt;
+}
+#inputtable td {
+    vertical-align: middle;
+    font-size: medium;
+}
+#inputtable button, #inputtable select, #inputtable textarea, #inputtable input, #menutable select {
+    border-radius: 6pt;
+    border: 1pt solid gray;
+    padding: 4pt;
+    text-align: center;
+    width: 3cm;
+    font-size: large;
+}
+#inputtable textarea {
+    text-align: left;
+}
+#inputtable button:hover {
+    border: 2pt solid black;
+    padding: 3pt;
+}
+#menutable {
+    text-align: center;
+}
+.textbox {
+    border-radius: 6pt;
+    border: 1pt solid gray;
+    padding: 4pt;
+    text-align: center;
+    width: 3cm;
+    font-size: large;
+}

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "Billing Mismatch Transaction",
+                caption: null,
+                tablekey: "table1",
+                columns: [
+                    { head: "Member-Id", field: "MemberId", formats: [{ type: "fmtLinkMemberId" }] },
+                    { head: "Billing#", field: "Billing#", formats: [] },
+                    { head: "Transactions", field: "TransactionSum", formats: [{ type: "fmtMoney" }] },
+                    { head: "Billed-Amount", field: "BilledAmount", formats: [{ type: "fmtMoney" }] },
+                    { head: "Billed-On", field: "BilledTime", formats: [{ type: "fmtDate" }] },
+                    { head: "Billed-Wf", field: "BilledWf", formats: [] },
+                ]
+            }
+        ;
+
+        $( document ).ready( function ()
+        {
+            CenteredDataTableReady();
+        } );
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

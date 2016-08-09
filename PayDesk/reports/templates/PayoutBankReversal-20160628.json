@@ -1,0 +1,53 @@
+[
+    {
+        "templateName": "PayoutBankReversal",
+        "templateType": "xlsx",
+        "separatorDbTable": 1,
+        "grid_settings": [
+            {
+                "db_table": 2,
+                "xlxSheetName": "BankReversed",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PaidAmount",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "WfPayment",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccountingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "OpDate",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+] 
+

@@ -12,23 +12,23 @@
                     "bookmark_name": "RefNumber"
                 },
                 {
-                    "db_table_field_name": "ReportSeparator",
-                    "format": "AddresseeName",
+                    "db_table_field_name": "AddresseeName",
+                    "format": "None",
                     "bookmark_name": "AddresseeName"
                 },
                 {
-                    "db_table_field_name": "ReportSeparator",
-                    "format": "AddresseeDesignation",
+                    "db_table_field_name": "AddresseeDesignation",
+                    "format": "None",
                     "bookmark_name": "AddresseeDesignation"
                 },
                 {
-                    "db_table_field_name": "ReportSeparator",
-                    "format": "AddresseeBank",
+                    "db_table_field_name": "BankName",
+                    "format": "None",
                     "bookmark_name": "AddresseeBank"
                 },
                 {
-                    "db_table_field_name": "ReportSeparator",
-                    "format": "AddresseeName",
+                    "db_table_field_name": "AddresseeName",
+                    "format": "None",
                     "bookmark_name": "AddresseeName2"
                 }
             ]
@@ -74,28 +74,30 @@
         "templateName": "BankAddresseeTable",
         "templateType": "xlsx",
         "separatorDbTable": 3,
-        "grid_settings": {
-            "db_table": 4,
-            "xlx_sheet_index": 0,
-            "grid_start_row": 2,
-            "grid_columns": [
-                {
-                    "db_table_field_name": "BankCode",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "BankCode",
-                    "format": "AddresseeName"
-                },
-                {
-                    "db_table_field_name": "BankCode",
-                    "format": "AddresseeDesignation"
-                },
-                {
-                    "db_table_field_name": "BankCode",
-                    "format": "AddresseeBank"
-                }
-            ]
-        }
+        "grid_settings": [
+            {
+                "db_table": 4,
+                "xlxSheetName": "Sheet1",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "BankCode",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AddresseeName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AddresseeDesignation",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "BankName",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Workflow Information</title>
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <style type="text/css">
+
+        .atitle2 {
+            padding-top:.7cm;
+            padding-bottom:.2cm;
+            cursor:unset;
+        }
+    </style>
+
+    <script>
+
+        function showWorkflows(json) {
+
+	        if ( json.exceptionMessage ) {
+	            $('#waitmsg').html('<span style="color:red"><b>' + json.exceptionMessage + '</span>');
+	            return 0 ;
+	        }
+
+	        $('#waitmsg').hide();
+
+	        var trs = '';
+
+	        var t1 = json.table1; if (t1 == null) t1 = [];
+	        if (t1.length > 0) {
+	            trs += '<tr><td class="atitle atitle2" style="color:red;"><span class="atitle">Members INACTIVE</span></td></tr>';
+	            trs += '<tr><td style="width:9cm;">Assigned To</td></tr>';
+	            for (var i = 0 ; i < t1.length ; i++) {
+	                trs += '<tr>' + tdStr(t1[i].Username) + '</tr>';
+	            }
+	        }
+
+	        var t2 = json.table2; if (t2 == null) t2 = [];
+	        if (t2.length > 0) {
+	            trs += '<tr><td class="atitle atitle2" colspan="2" style="color:red;"><span class="atitle">Roles WITHOUT Staff</span></td></tr>';
+	            trs += '<tr><td>RoleName</td><td style="width:2cm;">Role</td></tr>';
+	            for (var i = 0 ; i < t2.length ; i++) {
+	                trs += '<tr>' + tdStr(t2[i].RoleName) + tdStr(t2[i].RoleCode) + '</tr>';
+	            }
+	        }
+
+	        var t3 = json.table3; if (t3 == null) t3 = [];
+	        if (t3.length > 0) {
+	            trs += '<tr><td class="atitle atitle2" colspan="2" style="color:red;"><span class="atitle">Members WITHOUT Access</span></td></tr>';
+	            trs += '<tr><td>RoleName</td><td>Role</td><td style="width:5cm;">Assigned To</td></tr>';
+	            for (var i = 0 ; i < t3.length ; i++) {
+	                trs += '<tr>' + tdStr(t3[i].RoleName) + tdStr(t3[i].RoleCode) + tdStr(t3[i].Username) + '</tr>';
+	            }
+	        }
+
+	        var t4 = json.table4; if (t4 == null) t4 = [];
+	        if (t4.length > 0) {
+	            trs += '<tr><td class="atitle atitle2" colspan="2"><span class="atitle">Bottleneck Issues</span></td></tr>';
+	            trs += '<tr><td>RoleName</td><td>Role</td><td>Wf Started</td><td style="width:2cm;">Count</td></tr>';
+	            for (var i = 0 ; i < t4.length ; i++) {
+	                trs += '<tr>' + tdStr(t4[i].RoleName) + tdStr(t4[i].RoleCode) + tdStr(t4[i].WfStarted.substr(0,16)) + tdStr(t4[i].EvCount) + '</tr>';
+	            }
+	        }
+
+	        $('#issues').html(trs);
+
+	        trs = '';
+
+	        var t5 = json.table5;
+	        trs += '<thead><tr><td class="atitle atitle2" colspan="6"><span class="atitle">Delayed Public Requests</span> &nbsp;&nbsp;&nbsp;&nbsp;</td></tr>'
+                    + '<tr><td style="width:9cm;">RoleName</td><td style="width:2cm;">Role</td><td style="width:5cm;">Wf Started</td><td>Wf Number</td><td style="width:8cm;">Event</td><td style="width:5cm;">Assigned To</td></tr></thead>';
+	        trs += '<tbody>';
+	        for ( var i = 0 ; i < t5.length ; i++ )
+	        {
+	            trs += '<tr>'
+	                    + tdStr( t5[i].RoleName ) + tdStr( t5[i].RoleCode ) + tdStr( t5[i].WfStarted.substr( 0, 16 ) ) + tdStr( t5[i].WfNumber )
+                        + tdStr( t5[i].EvDescription ) + tdStr( t5[i].Username ) + '</tr>';
+	        }
+
+	        $( '#delayedtable' ).html( trs );
+
+	        trs = '';
+
+	        var wfPrefix, wfPrefixes = [];
+
+	        var issue, username, usernames = [];
+
+	        var t6 = json.table6;
+	        trs += '<thead><tr><td class="atitle atitle2" colspan="6"><span class="atitle">Active Workflows</span> &nbsp;&nbsp;&nbsp;&nbsp;'
+                    + '<select id="filter1" class="textbox" style="width:4cm;"><option value="all">Show All</option><option value="issue">Has Issues</option><option id="wfprefixoption">By WfType</option><option id="usernameoption">By User</option></select>'
+                    + '&nbsp;<select id="filter2" class="textbox" style="width:13cm;"><option value=""></option></select>'
+                    + '</td></tr>'
+                    + '<tr><td style="width:9cm;">RoleName</td><td style="width:2cm;">Role</td><td style="width:5cm;">Wf Started</td><td>Wf Number</td><td style="width:8cm;">Event</td><td style="width:5cm;">Assigned To</td></tr></thead>';
+	        trs += '<tbody id="flows">';
+	        for (var i = 0 ; i < t6.length ; i++) {
+	            wfPrefix = t6[i].WfNumber.substr(0, 5);
+	            if (wfPrefixes.indexOf(wfPrefix) < 0) wfPrefixes.push(wfPrefix);
+	            username = t6[i].Username;
+	            if (username != null && usernames.indexOf(username) < 0) usernames.push(username);
+	            username = (username == null) ? '' : ' username="' + username + '" ';
+	            issue = (t6[i].UserIsActive | t6[i].MemberHasRole | t6[i].RoleHas) == 1 || t6[i].RoleCode == 'SYS' ? '' : ' issue ' ;
+	            trs += '<tr wfprefix="' + wfPrefix + '" ' + username + issue + ' >'
+	                    + tdStr(t6[i].RoleName) + tdStr(t6[i].RoleCode) + tdStr(t6[i].WfStarted.substr(0, 16)) + tdStr(t6[i].WfNumber) + tdStr(t6[i].EvDescription) + tdStr(t6[i].Username) + '</tr>';
+	        }
+
+	        $('#flowstable').html(trs);
+
+	        var usernameoptions = usernames.sort().reduce(function (r, ce) { return r + '<option value="username=@' + ce + '">' + ce + '</option>'; }, '');
+	        $('#usernameoption').attr('value', usernameoptions);
+
+	        var t7 = json.table7; // workflow types
+	        var wfprefixoptions = t7.reduce(function (r, ce) { return r + (wfPrefixes.indexOf(ce.WfPrefix) < 0 ? '' : '<option value="wfprefix=@' + ce.WfPrefix + '">' + ce.WfDescription + '</option>'); }, '');
+	        $('#wfprefixoption').attr('value', wfprefixoptions);
+
+	        $('#filter2').change(function (e) {
+	            console.log($(this).val().replace('@','"') + '"');
+	            $('#flows > tr').hide();
+	            $('#flows > tr[' + $(this).val().replace('@','"') + '"]').show();
+	        });
+
+	        $('#filter1').change(function (e) {
+	            var f1 = $(this).val();
+	            if (f1 == 'all') {
+	                $('#filter2').hide();
+	                $('#flows > tr').show();
+	            } else if (f1 == 'issue') {
+	                $('#filter2').hide();
+	                $('#flows > tr').hide();
+	                $('#flows > tr[issue]').show();
+	            } else {
+	                $('#filter2').show();
+	                $('#filter2').html($(this).val()).trigger('change');
+	            }
+	        }).trigger('change');
+
+	        $( '#datadiv' ).show();
+
+        }
+
+	function tdStr( v ) { return '<td class="spanValue">' + ( v == null ? '' : v ) + '</td>' ; }
+
+	$(document).ready(function () {
+
+	    // set headings and info
+	    var body = '<span class="thetitle" goback >The Payment Portal</span>';
+	    body += '<span id="version">Pensions &amp; Claims Department</span>'; // - [ version:2.0, released:2016-06-01, database:' + 'X' + ' ] </span>';
+	    body += '<div id="waitmsg" /><div id="datadiv"><table cellspacing="6" cellpadding="0"><tbody id="issues"></tbody></table><table id="delayedtable" cellspacing="6" cellpadding="0"></table><br/><table id="flowstable" cellspacing="6" cellpadding="0"></table></div>';
+	    $( 'body' ).html( body );
+	    // commong functions to execute if elements exist
+	    $( '#datadiv' ).hide();
+	    $( 'span[url]' ).click( function ( e ) { window.open( $( this ).attr( 'url' ), "_self" ); } );
+	    $( 'span[goback]' ).click( function ( e ) { window.history.back(); } );
+
+	    var counter = 0;
+	    var myInterval = setInterval(function () { counter += 1; $('#waitmsg').text('..... loading ' + counter + ' seconds .....'); }, 1000);
+	    $.get("../api1/workflow/", function (data) { clearInterval(myInterval); showWorkflows(data); });
+
+	    
+	});
+
+    </script>
+</head>
+<body style="text-align:left;">
+</body>
+</html>

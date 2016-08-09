@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "Payout Rejection ; BML",
+                caption: null,
+                tablekey: "table2",
+                columns: [
+                    { head: "?", field: "ValidFlag", formats: [{ type: "fmtRowValid" }] },
+                    { head: "Payment-Id", field: "PaymentId", formats: [] },
+                    { head: "Account-Name", field: "AccName", formats: [] },
+                    { head: "Acc-Prefix", field: "AccPrefix", formats: [] },
+                    { head: "Acc-Customer", field: "AccCustomer", formats: [] },
+                    { head: "Acc-Suffix", field: "AccSuffix", formats: [] },
+                    { head: "PensionMonth", field: "PensionMonth", formats: [{ type: "fmtDate" }] },
+                    { head: "Pension-Value", field: "PaidAmount", formats: [] },
+                ]
+            }
+        ;
+
+        function downloadUrlParams()
+        {
+            return $( '#txtIds' ).val().split( '\n' ).join( ',' );
+        }
+
+        $( document ).ready( function ()
+        {
+            var trs = '<tr><td>Payment-Ids :</td><td><textarea id="txtIds" /></td><td><button id="cmdGo">Go</button></td></tr>';
+            CenteredDataTableReady( trs );
+        } );
+
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

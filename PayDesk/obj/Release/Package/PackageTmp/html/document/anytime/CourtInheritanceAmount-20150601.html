@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var settings =
+            {
+                title: "Court Inheritance Amount",
+                caption: null,
+                tablekey: "table2",
+                columns: [
+                    { head: "Identifier", field: "MIdentifier", formats: [{ type: "fmtLinkMemberDnr" }] },
+                    { head: "Member-Id", field: "MMemberId", formats: [{ type: "fmtLinkMemberId" }] },
+                    { head: "Member-Name", field: "MMemberName", formats: [] },
+                    { head: "Member-Name-Mv", field: "MMemberNameAddressMv", formats: [{ type: "fmtPhoneticMv" }] },
+                    { head: "DoDeath", field: "MDoDeath", formats: [{ type: "fmtDate" }] },
+                    { head: "Court-Name", field: "CourtName", formats: [] },
+                    { head: "Court-Account", field: "CourtAccNumber", formats: [] },
+                    { head: "Pension", field: "PensionType", formats: [] },
+                    { head: "Amount", field: "TransactAmount", formats: [{ type: "fmtMoney" }] },
+                ]
+            }
+        ;
+
+        function downloadUrlParams()
+        {
+            return '/' + $( '#txtMember' ).val() + '/' + $( '#txtCourt' ).val();
+        }
+
+        $( document ).ready( function ()
+	    {
+            var trs = '<tr><td>Member :</td><td><input type="text" id="txtMember" placeholder="Identifier" /></td></tr>';
+            trs += '<tr><td>Court :</td></td><td><input type="text" id="txtCourt" placeholder="Court" /></td><td><button id="cmdGo">Go</button></td></tr>';
+            CenteredDataTableReady( trs );
+	    } );
+
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

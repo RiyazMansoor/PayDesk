@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="/paydesk/html/jquery.min.js"></script>
+    <script src="/paydesk/html/paydesk.js"></script>
+    <link rel='stylesheet' type='text/css' href='/paydesk/html/paydesk.css'>
+    <script>
+
+        var dbsynctime = 'sync time';
+        var menu = {
+            title: "Checklists",
+            titlelink: "..",
+            units: [
+                { code: "pcd", name: "Pensions &amp; Claims Department" },
+                { code: "afd", name: "Administration &amp; Finance Division" },
+                { code: "itd", name: "Information Technology Department" },
+            ],
+            pages: [
+                { code: "pcd", name: "Payment Uncollected", value: "payoutpaymentuncollected/" },
+                { code: "pcd", name: "Post Liquidation Arrears", value: "postliquidationportfolio/" },
+                { code: "pcd", name: "Payment Arrears", value: "paymentarrears/" },
+                { code: "itd", name: "Foreigner Beneficiary Start Month", value: "beneficiarystartdate/" },
+                { code: "itd", name: "Incorrect Death Overpayments", value: "incorrectdeathoverpayment/" },
+                { code: "itd", name: "Mirror Master Error Log", value: "mirrormastererrorlog/" },
+                { code: "itd", name: "Mrps Master Exhausted", value: "mrpsmasterexhausted/" },
+                { code: "itd", name: "Mrps Conservative Negative", value: "mrpsconservativenegative/" },
+                { code: "itd", name: "Billing Mismatch Transaction", value: "billingmismatchtransaction/" },
+                { code: "itd", name: "Payment Mismatch Transaction", value: "paymentmismatchtransaction/" },
+                { code: "pcd", name: "System Payment Rejections", value: "payoutpaymentprerejection/" },
+                { code: "pcd", name: "Members to be Suspended", value: "payoutpaymentsuspension/" },
+                { code: "pcd", name: "Large Overpayments", value: "largeoverpayment/" },
+                { code: "afd", name: "Payout In, Billing Out", value: "payoutinbillingout/" },
+                { code: "afd", name: "Billing In, Payout Out", value: "billinginpayoutout/" },
+                { code: "afd", name: "Recently Accepted SBS", value: "sbsrecent/" },
+                { code: "pcd", name: "Mrps Not Applied", value: "mrpsnotapplied/" },
+                { code: "pcd", name: "Mrps Foreigners Balance Remaining", value: "mrpsforeignerbalanceremaining/" },
+                { code: "pcd", name: "Retirement Package Overlap", value: "retirementpackageoverlap/" },
+            ]
+        };
+
+        $( document ).ready( function ()
+        {
+            MenuPageReady();
+        } );
+
+    </script>
+</head>
+<body>
+</body>
+</html>

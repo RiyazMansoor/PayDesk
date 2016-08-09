@@ -1,0 +1,189 @@
+[
+    {
+        "templateName": "BillingReconciliation",
+        "templateType": "xlsx",
+        "separatorDbTable": 1,
+        "grid_settings": [
+            {
+                "db_table": 2,
+                "xlxSheetName": "Billings",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "PostingDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ValueDate",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TranTypeDesc",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "ChequeNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "EmployerId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TrackingNo",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Debit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "Credit",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "SchemeId",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PensionType",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "templateType": "csv",
+        "separatorDbTable": 1,
+        "dbTables": [
+            {
+                "csvFileName": "BML-yyyymmdd-7701178829010~SCA.csv",
+                "dbTableIndex": 3,
+                "dbTableColumns": [
+                    {
+                        "columnName": "PostingDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ValueDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TranTypeDesc",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ChequeNumber",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "EmployerId",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TrackingNo",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Debit",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Credit",
+                        "columnTransform": "None"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "templateType": "csv",
+        "separatorDbTable": 1,
+        "dbTables": [
+            {
+                "csvFileName": "BML-yyyymmdd-7701178829007~BP.csv",
+                "dbTableIndex": 4,
+                "dbTableColumns": [
+                    {
+                        "columnName": "PostingDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ValueDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TranTypeDesc",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ChequeNumber",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "EmployerId",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TrackingNo",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Debit",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Credit",
+                        "columnTransform": "None"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "templateType": "csv",
+        "separatorDbTable": 1,
+        "dbTables": [
+            {
+                "csvFileName": "BML-yyyymmdd-7701178829010~OPB.csv",
+                "dbTableIndex": 5,
+                "dbTableColumns": [
+                    {
+                        "columnName": "PostingDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ValueDate",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TranTypeDesc",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "ChequeNumber",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "EmployerId",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "TrackingNo",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Debit",
+                        "columnTransform": "None"
+                    },
+                    {
+                        "columnName": "Credit",
+                        "columnTransform": "None"
+                    }
+                ]
+            }
+        ]
+    }
+]
+

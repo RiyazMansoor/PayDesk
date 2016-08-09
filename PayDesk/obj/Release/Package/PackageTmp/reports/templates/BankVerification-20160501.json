@@ -17,36 +17,38 @@
                 ]
             }
         ],
-        "grid_settings": {
-            "db_table": 2,
-            "xlx_sheet_index": 2,
-            "grid_start_row": 2,
-            "grid_columns": [
-                {
-                    "db_table_field_name": "MIdentifier",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "MemberName",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "DoBirth",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "AccName",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "AccNumber",
-                    "format": "None"
-                },
-                {
-                    "db_table_field_name": "PhoneNumber",
-                    "format": "None"
-                }
-            ]
-        }
+        "grid_settings": [
+            {
+                "db_table": 2,
+                "xlx_sheet_index": 2,
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "AccNumber",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "PhoneNumber",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
     }
 ]

@@ -90,17 +90,76 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="html\checklist\RetirementPackageOverlap-20150628.html" />
+    <Content Include="html\checklist\MrpsForeignerBalanceRemaining-20150628.html" />
+    <Content Include="html\checklist\MrpsNotApplied-20150626.html" />
+    <Content Include="html\checklist\NonEligibleActiveTransactions-20160715.html" />
+    <Content Include="html\checklist\NoMrpsActiveTransactions-20160715.html" />
+    <Content Include="html\checklist\SbsRecent-20150615.html" />
+    <Content Include="html\checklist\PaymentArrears-20150615.html" />
+    <Content Include="html\checklist\BillingMismatchTransaction-20150615.html" />
+    <Content Include="html\checklist\PaymentMismatchTransaction-20150615.html" />
+    <Content Include="html\checklist\MrpsConservativeNegative-20150615.html" />
+    <Content Include="html\checklist\MirrorMasterErrorLog-20150615.html" />
+    <Content Include="html\checklist\BillingInPayoutOut-20150601.html" />
+    <Content Include="html\checklist\IncorrectDeathOverpayment-20150615.html" />
+    <Content Include="html\checklist\MrpsMasterExhausted-20150615.html" />
+    <Content Include="html\checklist\PayoutInBillingOut-20150601.html" />
+    <Content Include="html\checklist\PayoutPaymentUncollected-20150601.html" />
+    <Content Include="html\checklist\BeneficiaryStartDate-20150601.html" />
+    <Content Include="html\checklist\LargeOverpayment-20150601.html" />
+    <Content Include="html\document\anytime\PayoutRejectionNonBml-20150705.html" />
+    <Content Include="html\document\anytime\PayoutRejectionBml-20150705.html" />
+    <Content Include="html\document\monthly\BillingDroppedMemberList-20150622.html" />
+    <Content Include="html\document\anytime\MemberOverpaymentStatus-20150615.html" />
+    <Content Include="html\document\anytime\MemberPayoutStatement-20150620.html" />
+    <Content Include="html\document\anytime\CourtInheritancePaid-20150601.html" />
+    <Content Include="html\document\anytime\BillingReconciliation-20150601.html" />
+    <Content Include="html\document\anytime\CourtInheritanceAmount-20150601.html" />
+    <Content Include="html\document\monthly\OutBillingInPayout-20150629.html" />
+    <Content Include="html\document\monthly\InBillingOutPayout-20150629.html" />
+    <Content Include="html\document\monthly\NewSbsAudit-20150615 - Copy.html" />
+    <Content Include="html\document\monthly\PayoutBankReversal-20150628.html" />
+    <Content Include="html\document\monthly\BillingNewMemberList-20150622.html" />
+    <Content Include="html\document\monthly\RetirementNotification-20150601.html" />
+    <Content Include="html\document\monthly\NewOverpaymentNotification-20150601.html" />
+    <Content Include="html\document\weekly\OverpaymentRecoveryReferee2-20150601.html" />
+    <Content Include="html\document\weekly\OverpaymentRecoveryReferee1-20150601.html" />
+    <Content Include="html\document\weekly\BankOverpaymentRecovery-20150601.html" />
+    <Content Include="html\paydesk.js" />
+    <Content Include="html\checklist\PayoutPaymentSuspension-20150601.html" />
+    <Content Include="html\checklist\PayoutPaymentPreRejection-20150601.html" />
     <Content Include="html\jquery.min.js" />
-    <Content Include="html\MemberDnrSearch.html" />
-    <Content Include="html\PaymentPortal.html" />
-    <Content Include="html\MemberOverview.html" />
+    <Content Include="html\member\DnrMpaoService-20160607.html" />
+    <Content Include="html\Checklist-20160607.html" />
+    <Content Include="html\member\DnrLiveService-20160607.html" />
+    <Content Include="html\checklist\PostLiquidationPortfolio-20150601.html" />
+    <Content Include="html\paydesk.css" />
+    <Content Include="html\report\KoshaaruFiles-20150629.html" />
+    <Content Include="html\report\PayoutFiles-20150629.html" />
+    <Content Include="html\report\PaymentIdList-20150607.html" />
+    <Content Include="html\report\MemberIdList-20150601.html" />
+    <Content Include="html\report\PaymentOverTheYears-20150601.html" />
+    <Content Include="html\report\BillingReconciliation-20150601.html" />
+    <Content Include="html\report\AtollBasicPensioner-20150601.html" />
+    <Content Include="html\report\MrpsFinesAccount-20150601.html" />
+    <Content Include="html\report\BankAccountVerification-20150601.html" />
+    <Content Include="html\report\DeathProcessing-20150601.html" />
+    <Content Include="html\report\BillingOverTheYears-20150601.html" />
+    <Content Include="html\report\MrpsMonthlyPayments-20150601.html" />
+    <Content Include="html\Workflow-20160607.html" />
+    <Content Include="html\Versions-20160607.html" />
+    <Content Include="html\Member-20160607.html" />
+    <Content Include="html\Portal-20160607.html" />
+    <Content Include="html\Document-20160607.html" />
+    <Content Include="html\Report--20160607.html" />
+    <Content Include="html\member\MemberOverview-20160607.html" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\IIS.pubxml" />
     <None Include="Properties\PublishProfiles\PayDesk.pubxml" />
     <Content Include="reports\templates\RetirementNotification-20160501.json" />
     <Content Include="reports\templates\BankOverpaymentRecovery-20160501.json" />
     <Content Include="reports\templates\MemberOverpaymentStatus-20160501.json" />
-    <Content Include="reports\templates\OverpaymentRefereeLetter-20160501.json" />
     <Content Include="reports\templates\PaydeskUserInterface-20160501.json" />
     <Content Include="reports\templates\BankVerification-20160501.json" />
     <Content Include="reports\templates\BankAddresseeTable-20160501.xltx" />
@@ -108,11 +167,39 @@
     <Content Include="reports\templates\BankVerification-20160501.xltx" />
     <Content Include="reports\templates\EnvelopTable-20160501.xltx" />
     <Content Include="reports\templates\MemberOverpaymentStatus-20160501.dotx" />
-    <Content Include="reports\templates\OverpaymentMonthlyNotice-20160501.dotx" />
-    <Content Include="reports\templates\OverpaymentRefereeLetter-20160501.dotx" />
     <Content Include="reports\templates\RetirementNotification-20160501.dotx" />
-    <Content Include="reports\templates\StatePensionTopUp-20160501.xltx" />
-    <Content Include="reports\templates\StatePensionTopUp-20160501.json" />
+    <Content Include="reports\templates\BillingReconciliation-20160601.xltx" />
+    <Content Include="reports\templates\BillingReconciliation-20160601.json" />
+    <Content Include="reports\templates\OverpaymentReferee1Letter-20160501.dotx" />
+    <Content Include="reports\templates\OverpaymentReferee1Letter-20160501.json" />
+    <Content Include="reports\templates\OverpaymentReferee2Letter-20160501.dotx" />
+    <Content Include="reports\templates\OverpaymentReferee2Letter-20160501.json" />
+    <Content Include="reports\templates\CourtInheritanceAmount-20160501.json" />
+    <Content Include="reports\templates\CourtInheritanceAmount-20160501.dotx" />
+    <Content Include="reports\templates\CourtInheritancePaid-20160501.json" />
+    <Content Include="reports\templates\NewSbsAudit-20160515.dotx" />
+    <Content Include="reports\templates\NewOverpaymentNotification-20160501.dotx" />
+    <Content Include="reports\templates\NewOverpaymentNotification-20160501.json" />
+    <Content Include="reports\templates\CourtInheritancePaid-20160501.dotx" />
+    <Content Include="reports\templates\NewSbsAudit-20160515.json" />
+    <Content Include="reports\templates\NewSbsAuditList-20160615.xltx" />
+    <Content Include="reports\templates\MemberPayoutStatement-20160620.dotx" />
+    <Content Include="reports\templates\MemberPayoutStatement-20160515.json" />
+    <Content Include="reports\templates\BillingNewMemberList-20160622.xltx" />
+    <Content Include="reports\templates\BillingNewMemberList-20160522.json" />
+    <Content Include="reports\templates\BillingDroppedMemberList-20160622.xltx" />
+    <Content Include="reports\templates\BillingDroppedMemberList-20160522.json" />
+    <Content Include="reports\templates\PayoutBankReversal-20160628.xltx" />
+    <Content Include="reports\templates\PayoutBankReversal-20160628.json" />
+    <Content Include="reports\templates\InBillingOutPayout-20160629.xltx" />
+    <Content Include="reports\templates\InBillingOutPayout-20160529.json" />
+    <Content Include="reports\templates\OutBillingInPayout-20160629.xltx" />
+    <Content Include="reports\templates\OutBillingInPayout-20160529.json" />
+    <Content Include="reports\templates\PayoutRejectionBml-20160705.xltx" />
+    <Content Include="reports\templates\PayoutRejectionNonBml-20160705.xltx" />
+    <Content Include="reports\templates\PayoutRejectionBml-20160705.json" />
+    <Content Include="reports\templates\PayoutRejectionNonBml-20160705.json" />
+    <Content Include="reports\templates\CourtInheritancePaidFamilyCourt-20160712.dotx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,11 +209,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="screenshots\v0\1.png" />
+    <Content Include="screenshots\v0\2.png" />
+    <Content Include="screenshots\v0\3.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Util\DnrServiceUtil.cs" />
     <Compile Include="Util\FileUtil.cs" />
     <Compile Include="Util\MvUtil.cs" />
     <Compile Include="Util\ReportUtil.cs" />
@@ -143,6 +234,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="screenshots\v1\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -162,7 +254,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49897</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49897/</IISUrl>
+          <IISUrl>http://localhost:49897/paydesk/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

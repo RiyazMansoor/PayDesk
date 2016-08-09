@@ -1,0 +1,70 @@
+[
+    {
+        "templateName": "NewSbsAudit",
+        "templateType": "docx",
+        "separatorDbTable": 2,
+        "bookmark_settings": {
+            "db_table": 2,
+            "bookmarks": [
+                {
+                    "db_table_field_name": "ReportSeparator",
+                    "format": "None",
+                    "bookmark_name": "RefNumber"
+                },
+                {
+                    "db_table_field_name": "Addresee",
+                    "format": "None",
+                    "bookmark_name": "Addresee"
+                },
+                {
+                    "db_table_field_name": "AddresseeInstitution",
+                    "format": "None",
+                    "bookmark_name": "Institution"
+                }
+            ]
+        }
+    },
+    {
+        "templateName": "NewSbsAuditList",
+        "templateType": "xlsx",
+        "separatorDbTable": 2,
+        "grid_settings": [
+            {
+                "db_table": 1,
+                "xlxSheetName": "SbsList",
+                "grid_start_row": 2,
+                "grid_columns": [
+                    {
+                        "db_table_field_name": "MIdentifier",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MemberName",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "DoBirth",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "LumpsumAmount",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "MonthlyPackage",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "TwoYearSalary",
+                        "format": "None"
+                    },
+                    {
+                        "db_table_field_name": "RetirementDate",
+                        "format": "None"
+                    }
+                ]
+            }
+        ]
+    }
+] 
+
