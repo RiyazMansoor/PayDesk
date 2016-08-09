@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Pension Workdesk",
+  "short_name": "PensionWorkDesk",
+  "description": "Searches the Pension Work Desk by either member identifier/id or payment id based on context",
+  "version": "1.0",
+  "minimum_chrome_version": "38",
+  "permissions": [
+    "contextMenus", 
+    "tabs"],
+  "icons": {
+    "16": "assets/search.png"
+  },
+  "background": {"page": "background.html"}
+}
